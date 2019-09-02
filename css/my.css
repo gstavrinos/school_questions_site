@@ -1,3 +1,12 @@
+.title {
+	background-color: #eee;
+	border: 30px solid #eee;
+}
+
+.wrapit {
+	word-wrap: break-word;
+}
+
 .score {
 	font-size: 500%;
 	color: orange;

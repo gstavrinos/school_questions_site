@@ -1,0 +1,63 @@
+.score {
+	font-size: 500%;
+	color: orange;
+	text-align: center;
+	font-weight: bold;
+	border: 0px solid #999;
+	background-color: #fff
+}
+
+.score2 {
+	font-size: 500%;
+	color: blue;
+	text-align: center;
+	font-weight: bold;
+	border: 0px solid #999;
+	background-color: #fff
+}
+
+
+.clockwrapper {
+   display: inline-block;
+	width:default;
+}
+
+.clock {
+}
+
+#counter {
+	padding: 15px;
+	margin-top: 20px;
+	text-align:center;
+	width:default;
+	background-color: #fff;
+}
+
+.timercontrols {
+	text-align: center;
+}
+
+h1, h2 {
+	text-align:center;
+}
+
+.modal-dialog {
+	text-align:center;
+}
+.modal-title {
+	font-size:300%;
+}
+
+.timeimg {
+	width: 150px;
+}
+
+.logo {
+	width:60px;
+}
+
+
+/*.flip-clock-label
+{
+    display: none;
+}*/

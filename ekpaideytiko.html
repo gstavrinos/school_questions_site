@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>
+        Παιχνίδι ερωτήσεων!
+    </title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/my.css" rel="stylesheet" type="text/css">
+    <link href="css/flipclock.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript">
+    </script>
+    <script src="js/bootstrap.min.js" type="text/javascript">
+    </script>
+    <script src="js/flipclock.min.js" type="text/javascript">
+    </script>
+    <script src="js/ekpaideytiko.js" type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <div id="backdrop">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>
+                    Δημόκριτος, μια περιήγηση <br/> στην καρδιά της έρευνας
+					</h1>
+            </div>
+        </div>
+        <div class="container" id="counter">
+            <div id="quiz">
+            </div>
+            <hr>
+            <div class="container">
+                <a class="btn btn-default" href="#" role="button" id="previous" style="width:200px;" name="previous" onclick="previous(); return false;">Προηγούμενη</a>
+                <a class="btn btn-default" href="#" role="button" id="qreset" style="width:200px;" name="qreset" onclick="qreset(); return false;">Επανεκκίνηση</a>
+                <a class="btn btn-default" href="#" role="button" id="next" style="width:200px;" name="next" onclick="next(); return false;">Επομένη</a>
+            </div>
+        </div>
+        <div class="container" id="maindiv">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-xs-3">
+                    <h2>
+							ΜΠΛΕ
+						</h2>
+                    <hr>
+                    <p style="text-align:center;">
+                        <input type="text" value="0" class="score2" id="score1" style="width:100%;">
+                    </p>
+                    <p style="text-align:center;">
+                        <a class="btn btn-default" href="#" role="button" id="inc1" style="width:50px;" name="inc1">+</a> <a class="btn btn-default" href="#" role="button" id="dec1" style="width:50px;" name="dec1">-</a>
+                    </p>
+                </div>
+                <div class="col-xs-6">
+                    <h2> &nbsp; </h2>
+                    <hr>
+                    <div class="" id="counter">
+                        <div class="clockwrapper">
+                            <div class="clock"></div>
+                        </div>
+                        <div class="timercontrols">
+                            <a class="btn btn-default" href="#" role="button" id="starttimer" style="width:100px;" name="starttimer" onClick="return false;">Έναρξη</a>
+                            <a class="btn btn-default" href="#" role="button" id="stoptimer" style="width:100px;" name="stoptimer" onClick="return false;">Παύση</a>
+                            <a class="btn btn-default" href="#" role="button" id="reset30sec" style="width:150px;" name="reset30sec" onClick="return false;">Επανεκκίνηση</a>
+                            <!--- <a class="btn btn-default" href="#" role="button" id="reset3min" style="width:100px;" name="reset3min">3' </a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <h2>
+							ΠΟΡΤΟΚΑΛΙ
+						</h2>
+                    <hr>
+                    <p style="text-align:center;">
+                        <input type="text" value="0" class="score" id="score2" style="width:100%;">
+                    </p>
+                    <p style="text-align:center;">
+                        <a class="btn btn-default" href="#" role="button" id="inc2" style="width:50px;" name="inc2">+</a> <a class="btn btn-default" href="#" role="button" id="dec2" style="width:50px;" name="dec2">-</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container footer" style="text-align:center; margin-top:5px;">
+            <div>
+                <!--<span class="text-muted">BigDataEurope has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement n°644564</span> -->
+            </div>
+
+            <img class="logo" src="img/ncsr.jpg">
+            <!--
+				<img class="logo" src="img/skel_logo.jpg">
+				<img class="logo" src="img/bde.png">
+				<img class="logo" src="img/eu.jpg"> -->
+        </div>
+
+        <div id="endoftimedlg" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">
+								Τέλος χρόνου!
+							</h4><img class="timeimg" src="img/time.gif">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

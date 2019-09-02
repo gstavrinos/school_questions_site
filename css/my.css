@@ -1,6 +1,7 @@
 .title {
 	background-color: #eee;
 	border: 30px solid #eee;
+	color: #081;
 }
 
 .wrapit {
@@ -9,22 +10,12 @@
 
 .score {
 	font-size: 500%;
-	color: orange;
+	color: black;
 	text-align: center;
 	font-weight: bold;
 	border: 0px solid #999;
 	background-color: #fff
 }
-
-.score2 {
-	font-size: 500%;
-	color: blue;
-	text-align: center;
-	font-weight: bold;
-	border: 0px solid #999;
-	background-color: #fff
-}
-
 
 .clockwrapper {
    display: inline-block;

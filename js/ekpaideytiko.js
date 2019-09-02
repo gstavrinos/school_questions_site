@@ -151,7 +151,7 @@ var q = '[\
 "a3": "3. Μέθοδοι που αναλύουν την λειτουργία των οργάνων του ανθρώπινου σώματος",\
 "a4":"4. Μέθοδοι για παραγωγή 3D παιχνιδιών ",\
 "true":"1. Σύνολο τεχνικών που εξετάζει τις ιδιότητες των υλικών με την βοήθεια Η/Υ",\
-"img":"media/img/simulation.gif"},\
+"img":"media/vid/video-water.gif"},\
 \
 {"question":"Πού δεν βρίσκονται μαγνητικά υλικά στη φύση;",\
 "a1":"1. Στον πυρήνα της Γης",\
@@ -187,8 +187,7 @@ var q = '[\
 "a2":"2. Χρυσά, Ασημένια και Χάλκινα κοσμήματα",\
 "a3": "3. Τσάι, Χυμοί και Αναψυκτικά",\
 "a4":"4. Όλα τα παραπάνω",\
-"true":"1. Ελαφρόπετρα, Σφουγγάρι και Τούβλο",\
-"img":"media/img/sponge.jpg"},\
+"true":"1. Ελαφρόπετρα, Σφουγγάρι και Τούβλο"},\
 \
 {"question":"Γιατί παρέχουμε νανοπορώδη υλικά με φάρμακο στους ασθενείς;",\
 "a1":"1. Για να είναι προστατευμένο το φάρμακο",\
@@ -232,7 +231,8 @@ var q = '[\
 "a2":"2. Πολλαπλασιάζει τον αριθμό των κυψελών τους άρα και τα φωτόνια που απορροφούν",\
 "a3": "3. Τα κάνει πιο εμφανίσιμα ",\
 "a4":"4. Όλα τα παραπάνω",\
-"true":"2. Πολλαπλασιάζει τον αριθμό των κυψελών τους άρα και τα φωτόνια που απορροφούν"},\
+"true":"2. Πολλαπλασιάζει τον αριθμό των κυψελών τους άρα και τα φωτόνια που απορροφούν",\
+"img":"media/img/solar_panda.jpg"},\
 \
 {"question":"Το ΙΝΝ μελετά και αναπτύσσει φωτοβολταϊκά 3ης γενιάς. Σε τι διαφέρουν από αυτά που ήδη γνωρίζουμε; ",\
 "a1":"1. Έχουν μικρότερο κόστος παραγωγής και μέγεθος",\
@@ -240,7 +240,7 @@ var q = '[\
 "a3": "3. Λειτουργούν σε υψηλή απόδοση ανεξάρτητα από την ποσότητα ακτινοβολίας και την κλίση τους",\
 "a4":"4. Όλα τα παραπάνω",\
 "true":"4. Όλα τα παραπάνω",\
-"img":"media/img/solar_panda.jpg"},\
+"img":"media/img/todo.jpg"},\
 \
 {"question":"Τι είναι ένα Πολυμερές;",\
 "a1":"1. Ένα μεγάλο μόριο που αποτελείται από επαναλαμβανόμενες δομικές μονάδες μικρών μορίων που ονομάζονται μονομερή",\
@@ -261,8 +261,7 @@ var q = '[\
 "a2":"2. Αφαλάτωση του θαλασσινού νερού ",\
 "a3": "3. Aιμοκάθαρση",\
 "a4":"4. Όλα τα παραπάνω ",\
-"true":"4. Όλα τα παραπάνω ",\
-"img":"media/img/polymeres.jpeg"},\
+"true":"4. Όλα τα παραπάνω "},\
 \
 {"question":"Η Ομήρου Οδύσσεια είναι 303 σελίδες Α4. Γραμμένη με ηλεκτρόνια στο ΙΝΝ, τι διαστάσεις έχει;",\
 "a1":"1. 5 cm<sup>2</sup>",\
@@ -302,7 +301,11 @@ str += "<h3>" + q[qidx][Object.keys(q[qidx])[i]] + "</h3>";
 }
 var count = Object.keys(q[qidx]).length;
 var answers = 1;
-var str = "<div style=\"justify-content:center;margin:auto\"><h2>" + q[qidx]['question'] + "</h2><table style=\"width:20%;margin:auto\";><tr>";
+var color = '#000066blue';
+if (qidx % 2 == 0) {
+    color = '#ff9900';
+}
+var str = "<div style=\"justify-content:center;margin:auto;color:"+color+"\"><h2>" + q[qidx]['question'] + "</h2><table style=\"width:20%;margin:auto\";><tr>";
 for (var i = 1; i < count; i++) {
     console.log(Object.keys(q[qidx])[i])
     if (Object.keys(q[qidx])[i] != 'img' && Object.keys(q[qidx])[i] != 'true'){
@@ -330,7 +333,11 @@ qidx++;
 }
 var count = Object.keys(q[qidx]).length;
 var answers = 1;
-var str = "<div style=\"justify-content:center;margin:auto\"><h2>" + q[qidx]['question'] + "</h2><table style=\"width:20%;margin:auto\";><tr>";
+var color = 'blue';
+if (qidx % 2 == 0) {
+    color = '#ff9900';
+}
+var str = "<div style=\"justify-content:center;margin:auto;color:"+color+"\"><h2>" + q[qidx]['question'] + "</h2><table style=\"width:20%;margin:auto\";><tr>";
 for (var i = 1; i < count; i++) {
     if (Object.keys(q[qidx])[i] != 'img' && Object.keys(q[qidx])[i] != 'true'){
         if (answers % 2 == 0) {

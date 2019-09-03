@@ -5,7 +5,12 @@
 }
 
 .wrapit {
-	word-wrap: break-word;
+	min-width: 400px;
+	white-space: normal;
+	height: 5em;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .score {
@@ -18,7 +23,7 @@
 }
 
 .clockwrapper {
-   display: inline-block;
+	display: inline-block;
 	width:default;
 }
 

@@ -11,6 +11,8 @@
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
+	font-size: larger;
+	font-weight: bold;
 }
 
 .score {
@@ -31,8 +33,6 @@
 }
 
 #counter {
-	padding: 15px;
-	margin-top: 20px;
 	text-align:center;
 	width:default;
 	background-color: #fff;
